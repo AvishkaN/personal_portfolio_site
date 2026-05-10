@@ -33,7 +33,7 @@ const HomePage = () => {
               </div>
             </div>
             <p className="text-muted-foreground text-lg md:text-2xl font-medium tracking-tight border-l-4 border-primary pl-4 text-left mx-auto lg:mx-0 max-w-fit">
-              AI Engineer & Robotics Specialist
+              AI Engineer & Deep learning, Robotics
             </p>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl leading-relaxed mx-auto lg:mx-0">
               Specializing in Python-driven automation, neural architectures, and edge computing for real-world robotics and intelligent systems.
