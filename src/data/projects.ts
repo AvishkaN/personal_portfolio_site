@@ -7,6 +7,7 @@ export type Project = {
   image: string;
   gallery: string[];
   videoUrl?: string;
+  linkedInPostUrls?: string[];
   tags: string[];
   techStack: { name: string; purpose: string }[];
   features: string[];
@@ -69,7 +70,7 @@ export const projects: Project[] = [
     gallery: [
       "/images/project_images/Avishka Nirmitha portfolio site self driving car project.jpeg",
     ],
-    videoUrl: "https://www.youtube.com/embed/MPV2METPeJU",
+    videoUrl: "",
     tags: ["Python", "PyTorch", "ROS2", "Computer Vision"],
     techStack: [
       { name: "Python", purpose: "Core system logic" },
@@ -90,6 +91,13 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AvishkaN",
     year: "2024",
     role: "Machine Learning Engineer",
+    linkedInPostUrls: [
+      "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7459220559718035457",
+      "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7274002561525788673",
+      "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7274004667443884032?collapsed=1",
+      "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7276504573542850560",
+    ],
+
   },
   {
     id: 3,

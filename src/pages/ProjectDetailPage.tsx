@@ -110,6 +110,29 @@ const ProjectDetailPage = () => {
         </div>
       )}
 
+      {project.linkedInPostUrls && project.linkedInPostUrls.length > 0 && (
+        <div className="mb-12">
+          <h2 className="text-foreground text-2xl md:text-3xl font-bold font-display mb-6">
+            Featured Posts
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {project.linkedInPostUrls.map((url, idx) => (
+              <div key={idx} className="flex justify-center w-full rounded-2xl overflow-hidden border border-border bg-card p-4 md:p-8">
+                <iframe
+                  src={url}
+                  height="772"
+                  width="504"
+                  title={`Embedded LinkedIn post ${idx + 1}`}
+                  className="max-w-full rounded-xl"
+                  frameBorder="0"
+                  allowFullScreen
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         <div className="lg:col-span-2">
           <h2 className="text-foreground text-2xl md:text-3xl font-bold font-display mb-6">
