@@ -15,24 +15,23 @@ const ProjectsPage = () => {
     <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-12 md:py-20">
       <div className="mb-8 md:mb-12">
         <h1 className="text-foreground text-3xl md:text-6xl font-bold leading-tight tracking-tight font-display mb-4 md:mb-6">
-          Project Gallery
+          Projects
         </h1>
         <p className="text-muted-foreground text-base md:text-xl max-w-3xl leading-relaxed">
           Exploring the frontiers of Robotics and AI. A showcase of autonomous systems, computer vision pipelines, and large-scale automation frameworks.
         </p>
       </div>
-      
+
       <div className="mb-8 md:mb-12 border-b border-border">
         <div className="grid grid-cols-2 md:flex md:flex-wrap items-center gap-0 md:gap-2">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`relative py-3 md:py-4 px-4 md:px-8 text-[10px] md:text-xs font-bold tracking-widest uppercase transition-all border-b-2 text-center ${
-                activeCategory === category
-                  ? "nav-tab-active border-primary"
-                  : "text-muted-foreground border-transparent hover:text-primary hover:border-primary/50"
-              }`}
+              className={`relative py-3 md:py-4 px-4 md:px-8 text-[10px] md:text-xs font-bold tracking-widest uppercase transition-all border-b-2 text-center ${activeCategory === category
+                ? "nav-tab-active border-primary"
+                : "text-muted-foreground border-transparent hover:text-primary hover:border-primary/50"
+                }`}
             >
               {category}
             </button>
@@ -47,9 +46,9 @@ const ProjectsPage = () => {
             className="flex flex-col lg:flex-row w-full min-h-[480px] overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/40 transition-all group"
           >
             <div className="lg:w-[55%] relative overflow-hidden bg-background">
-              {project.featured && (
+              {project.status && (
                 <div className="absolute top-6 left-6 z-20 flex gap-2">
-                  <div className="bg-primary px-3 py-1 text-primary-foreground text-[10px] font-bold rounded tracking-tighter uppercase">Featured</div>
+                  <div className="bg-primary px-3 py-1 text-primary-foreground text-[10px] font-bold rounded tracking-tighter uppercase">{project.status}</div>
                 </div>
               )}
               <div className="absolute inset-0 bg-gradient-to-r from-background/20 to-transparent z-10"></div>
@@ -63,11 +62,10 @@ const ProjectsPage = () => {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className={`px-3 py-1 text-[10px] font-bold rounded uppercase tracking-widest ${
-                      project.featured
-                        ? "bg-primary/10 border border-primary/20 text-primary"
-                        : "bg-secondary text-muted-foreground"
-                    }`}
+                    className={`px-3 py-1 text-[10px] font-bold rounded uppercase tracking-widest ${project.featured
+                      ? "bg-primary/10 border border-primary/20 text-primary"
+                      : "bg-secondary text-muted-foreground"
+                      }`}
                   >
                     {tag}
                   </span>
@@ -82,19 +80,19 @@ const ProjectsPage = () => {
                   to={`/projects/${project.slug}`}
                   className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-primary-foreground text-sm font-bold tracking-wide hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
                 >
-                  View Case Study
+                  View Project
                 </Link>
-                <button className="github-btn-glow flex items-center justify-center gap-2 rounded-lg h-12 px-6 border border-border text-muted-foreground text-sm font-bold hover:border-primary/50 hover:text-primary transition-all">
+                {/* <button className="github-btn-glow flex items-center justify-center gap-2 rounded-lg h-12 px-6 border border-border text-muted-foreground text-sm font-bold hover:border-primary/50 hover:text-primary transition-all">
                   <span className="material-symbols-outlined text-[20px]">code</span>
                   GitHub
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="mt-20 p-8 md:p-16 rounded-3xl bg-primary text-primary-foreground flex flex-col lg:flex-row justify-between items-center text-center lg:text-left shadow-2xl shadow-primary/30 relative overflow-hidden">
+      {/* <div className="mt-20 p-8 md:p-16 rounded-3xl bg-primary text-primary-foreground flex flex-col lg:flex-row justify-between items-center text-center lg:text-left shadow-2xl shadow-primary/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none"></div>
         <div className="relative z-10 lg:max-w-xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display">Ready to build the future?</h2>
@@ -113,7 +111,7 @@ const ProjectsPage = () => {
             GitHub Profile
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

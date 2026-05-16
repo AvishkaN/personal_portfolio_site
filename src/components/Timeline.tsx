@@ -2,16 +2,74 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const events = [
-  { year: "2019", title: "Started Journey", description: "Began exploring AI and robotics during university." },
-  { year: "2020", title: "First ML Project", description: "Built first computer vision model using OpenCV and TensorFlow." },
-  { year: "2021", title: "Robotics Research", description: "Joined robotics lab; worked on ROS-based autonomous navigation." },
-  { year: "2022", title: "AI Engineer Role", description: "Started professional career building neural architectures." },
-  { year: "2023", title: "Edge Computing", description: "Deployed real-time AI models on edge devices for industrial use." },
-  { year: "2024", title: "Tech Summit Keynote", description: "Presented research on scalable AI systems for robotics." },
-  { year: "2025", title: "Innovating Forward", description: "Leading new initiatives in autonomous intelligent systems." },
+  {
+    year: "2017",
+    title: "Started Programming",
+    description: [
+      "Began learning programming during Grade 9 with C# and Java.",
+      "Built the foundation for my software engineering journey."
+    ],
+  },
+  {
+    year: "2020",
+    title: "Web Development Journey",
+    description: [
+      "Started focused self-learning in web development.",
+      "Mastered HTML, CSS, JavaScript, React.js, and Node.js through real-world projects."
+    ],
+  },
+  {
+    year: "2021",
+    title: "Full-Stack Development",
+    description: [
+      "Expanded knowledge in frontend and backend systems.",
+      "Developed modern web applications and strengthening software engineering skills."
+    ],
+  },
+  {
+    year: "2022",
+    title: "AI Transition & Industry Experience",
+    description: [
+      "Shifted career focus from software engineering to Artificial Intelligence and Machine Learning.",
+      "Joined the industry as a Software Engineering Intern.",
+      "Received the 'Best Software Developer Of The Year 2022' award for outstanding performance and contributions."
+    ],
+  },
+  {
+    year: "2023",
+    title: "Deep Learning Foundations",
+    description: [
+      "Dedicated months to studying neural networks, mathematics, and backpropagation.",
+      "Explored deep learning internals to understand AI beyond the black-box level."
+    ],
+  },
+  {
+    year: "2024",
+    title: "Production AI & Recognition",
+    description: [
+      "Focused on Computer Vision, CNNs, and production-level AI systems.",
+      "Received the 'Exceptional Contributor 2024' award, including an international Bangkok tour recognition."
+    ],
+  },
+  {
+    year: "2025",
+    title: "Physical AI & Robotics",
+    description: [
+      "Currently building production-grade Machine Learning systems.",
+      "Growing interests in robotics, robotic arms, autonomous systems, and intelligent automation."
+    ],
+  },
+  {
+    year: "Future",
+    title: "Building Intelligent Systems",
+    description: [
+      "Continuously exploring the future of Physical AI, deep learning, and robotics.",
+      "Aiming to create scalable intelligent technologies for real-world impact."
+    ],
+  },
 ];
 
-const VISIBLE = 5;
+const VISIBLE = 10;
 
 const Timeline = () => {
   const [active, setActive] = useState(Math.floor(events.length / 2));
@@ -38,13 +96,13 @@ const Timeline = () => {
   const progress = ((active + 1) / events.length) * 100;
 
   return (
-    <section className="relative w-full py-16 md:py-24 hidden">
+    <section className="relative w-full py-16 md:py-24">
       <div className="max-w-[1280px] mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-4">
+          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-4">
             <span className="size-2 rounded-full bg-primary animate-pulse" />
             Career Timeline
-          </div>
+          </div> */}
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter name-glow">
             My <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">Journey</span>
           </h2>
@@ -139,9 +197,11 @@ const Timeline = () => {
             <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
               {events[active].title}
             </h3>
-            <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-              {events[active].description}
-            </p>
+            <ul className="text-muted-foreground text-sm md:text-base leading-relaxed list-disc list-inside text-left inline-block space-y-1">
+              {events[active].description.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

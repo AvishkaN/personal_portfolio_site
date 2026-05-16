@@ -43,9 +43,9 @@ const ProjectDetailPage = () => {
           <span className="px-3 py-1 text-[10px] font-bold rounded uppercase tracking-widest bg-primary/10 border border-primary/20 text-primary">
             {project.category}
           </span>
-          {project.featured && (
+          {project.status && (
             <span className="px-3 py-1 text-[10px] font-bold rounded uppercase tracking-widest bg-primary text-primary-foreground">
-              Featured
+              {project.status}
             </span>
           )}
         </div>

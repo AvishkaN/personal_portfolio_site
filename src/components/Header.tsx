@@ -18,18 +18,19 @@ const Header = () => {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    // { path: "/projects", label: "Projects" },
+    { path: "/projects", label: "Projects" },
     // { path: "/blogs", label: "Blogs" },
-    // { path: "/contact", label: "Contact" },
+    { path: "/awards", label: "Awards" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div className="max-w-[1280px] mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 md:gap-3">
-          <div className="size-8 md:size-10 bg-primary flex items-center justify-center rounded-lg text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)]">
+          {/* <div className="size-8 md:size-10 bg-primary flex items-center justify-center rounded-lg text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)]">
             <span className="material-symbols-outlined text-xl md:text-2xl">neurology</span>
-          </div>
+          </div> */}
           <span className="text-base md:text-xl font-bold tracking-tight uppercase text-foreground">Avishka Nirmitha</span>
         </Link>
 

@@ -41,7 +41,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4">
             <Link
-              to="/"
+              to="/projects"
               className="flex min-w-[160px] items-center justify-center gap-2 rounded-lg h-12 md:h-14 px-6 md:px-8 bg-primary text-primary-foreground text-sm md:text-base font-bold shadow-[0_0_30px_hsl(var(--primary)/0.3)] hover:scale-105 transition-transform"
             >
               <span>View Projects</span>
