@@ -36,7 +36,7 @@ const HomePage = () => {
               AI Engineer & Deep learning, Robotics
             </p>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl leading-relaxed mx-auto lg:mx-0">
-              Specializing in automation, neural architectures, and edge computing for real-world robotics and intelligent systems.
+              Specializing in AI, Deep Learning, Software Systems and robotics for real-world systems.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4">
