@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 
-const categories = ["All Systems", "Robotics", "Computer Vision", "AI Agents"];
+const categories = ["All Systems", "Robotics", "Computer Vision", "Open Source LLMs"];
 
 const ProjectsPage = () => {
   const [activeCategory, setActiveCategory] = useState("All Systems");

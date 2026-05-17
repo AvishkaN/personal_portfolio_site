@@ -9,7 +9,7 @@ The site serves as a professional, highly stylized online resume and portfolio. 
 1. **Brand & Identity:** It has a futuristic, "cyber/tech" aesthetic (using glowing text, scanlines, and terminal-like text snippets such as `TARGET_DETECTED` and `ACTIVE_CORE_01`) that perfectly fits an AI and Robotics engineer.
 2. **Skills:** Highlights key proficiencies like Python, PyTorch, OpenCV, ROS2, and TensorFlow.
 3. **Experience Timeline:** The timeline component features an interactive, year-by-year journey detailing the transition from early programming in 2017 to a current focus on Physical AI, Robotics, and production-grade Machine Learning.
-4. **Projects & Awards:** Displays actual real-world projects (e.g., self-driving pipelines, robotic arm automation) labeled with custom statuses (like "In Production" or "On Going"), alongside a dedicated page for awards and recognitions.
+4. **Projects & Awards:** Displays actual real-world projects (e.g., self-driving pipelines, robotic arm automation) labeled with custom statuses (like "In Production" or "On Going"). It includes a dynamic **Project Detail Page** to showcase in-depth goals, outcomes, image galleries, and embedded LinkedIn posts. Additionally, a dedicated **Awards Page** features an interactive "View Moment" image gallery modal to highlight specific recognitions and events.
 5. **Navigation & Contact:** Includes routes for Home, Projects, Awards, and Contact. The contact page provides a streamlined, secure-terminal-themed grid of direct communication links (LinkedIn, GitHub, Phone, Emails) rather than a traditional form.
 
 ## 💻 Tech Stack
@@ -29,7 +29,7 @@ Overall, it's a sleek, modern, single-page application (SPA) tailored to leave a
 The project follows a standard and organized React application structure inside the `src/` directory:
 
 *   **`components/`**: Reusable UI components (e.g., Header, Timeline, Buttons, and shadcn/ui primitives).
-*   **`pages/`**: Main route components representing different pages of the website (e.g., HomePage).
+*   **`pages/`**: Main route components representing different pages of the website (e.g., HomePage, ProjectDetailPage).
 *   **`data/`**: Static data files or configuration constants.
 *   **`hooks/`**: Custom React hooks for shared logic.
 *   **`lib/`**: Utility functions and helper libraries (common in shadcn setups for class merging like `utils.ts`).

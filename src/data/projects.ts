@@ -100,6 +100,39 @@ export const projects: Project[] = [
 
   },
   {
+    id: 4,
+    slug: "fire-detection-model",
+    title: "Fire Detection Model",
+    description:
+      "A robust real-time fire and smoke detection system utilizing computer vision for early warning and rapid response.",
+    longDescription:
+      "Developed a custom deep learning pipeline specialized in early fire and smoke detection. Trained on diverse environmental conditions to maintain high precision and minimize false positives. The architecture is optimized to run efficiently on edge devices, enabling immediate on-site alerts for enhanced safety and rapid incident response.",
+    image: "/public/images/project_images/Avishka Nirmitha portfolio fire detection model.jpg",
+    gallery: [],
+    tags: ["Computer Vision", "Object Detection", "Deep Learning"],
+    techStack: [
+      { name: "Python", purpose: "Core application logic" },
+      { name: "PyTorch", purpose: "Model training and optimization" },
+      { name: "OpenCV", purpose: "Real-time video feed processing" },
+      { name: "YOLO", purpose: "Custom Trained Object detection model" },
+    ],
+    features: [
+      "Real-time early fire and smoke detection",
+      "Optimized for edge device deployment",
+      "High accuracy across varying environmental conditions",
+      "Low false-positive rate"
+    ],
+    featured: false,
+    status: "Finished",
+    category: "Computer Vision",
+    githubUrl: "",
+    year: "2024",
+    role: "Machine Learning Engineer",
+    linkedInPostUrls: [
+      "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7211790847065907200"
+    ]
+  },
+  {
     id: 3,
     slug: "high-accuracy-face-recognition",
     title: "High-Accuracy Face Recognition System",
@@ -108,11 +141,9 @@ export const projects: Project[] = [
     longDescription:
       "Built a robust, high-performance facial recognition and identity verification system utilizing Siamese neural networks. The pipeline performs lightning-fast face detection, alignment, feature vector extraction, and matching against a high-dimensional database. It maintains a 99.8% true-positive rate even under challenging occlusions, varied lighting, and diverse angles, making it suitable for secure access control and monitoring.",
     image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+      "/public/images/project_images/Avishka Nirmitha portfolio face recognition1.png",
     gallery: [
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=80",
+      // "/public/images/project_images/Avishka Nirmitha portfolio face recognition.png"
     ],
     tags: ["Computer Vision", "Deep Learning", "TensorFlow"],
     techStack: [
@@ -133,6 +164,36 @@ export const projects: Project[] = [
     githubUrl: "",
     year: "2025",
     role: "Machine Learning Engineer",
+  },
+  {
+    id: 5,
+    slug: "local-llm-fine-tuning-pipeline",
+    title: "Local LLM Fine-Tuning Pipeline",
+    description:
+      "An end-to-end pipeline for fine-tuning open-source Large Language Models (like Llama 3 and Mistral) on custom domain-specific datasets.",
+    longDescription:
+      "Developed a comprehensive fine-tuning pipeline for customizing open-source Large Language Models. The system utilizes Parameter-Efficient Fine-Tuning (PEFT) techniques such as QLoRA to train large models on consumer-grade hardware. It includes automated data preprocessing, model 4-bit quantization, distributed training using Hugging Face Accelerate, and a customized evaluation framework to assess task-specific performance.",
+    image: "",
+    gallery: [],
+    tags: ["LLMs", "NLP", "Fine-Tuning", "PyTorch"],
+    techStack: [
+      { name: "Python", purpose: "Core training scripts" },
+      { name: "Hugging Face", purpose: "Model architecture and weights" },
+      { name: "PEFT/LoRA", purpose: "Parameter-efficient training" },
+      { name: "PyTorch", purpose: "Deep learning framework" },
+    ],
+    features: [
+      "QLoRA fine-tuning for low VRAM usage",
+      "Automated dataset formatting and tokenization",
+      "Support for Llama 3, Mistral, and other open weights",
+      "Custom evaluation metrics for domain-specific tasks"
+    ],
+    featured: true,
+    status: "Finished",
+    category: "Open Source LLMs",
+    githubUrl: "",
+    year: "2024",
+    role: "AI Engineer",
   },
 ];
 

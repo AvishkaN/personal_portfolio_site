@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, Github, ExternalLink, Calendar, User, Code2, CheckCircle2 } from "lucide-react";
 import { getProjectBySlug } from "@/data/projects";
 
 const ProjectDetailPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { slug } = useParams<{ slug: string }>();
   const project = slug ? getProjectBySlug(slug) : undefined;
   const [activeImage, setActiveImage] = useState(0);
