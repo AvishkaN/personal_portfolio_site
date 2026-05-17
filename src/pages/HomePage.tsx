@@ -26,9 +26,9 @@ const HomePage = () => {
                 <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold leading-[1.0] tracking-tighter text-foreground name-glow">
                   Avishka <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">nirmitha</span>
                 </h1>
-                <div className="mb-2 hidden sm:flex flex-col items-center justify-center size-20 rounded-xl border border-primary/40 bg-background/60 backdrop-blur-md exp-badge-glow">
-                  <span className="text-3xl font-bold text-primary leading-none">5+</span>
-                  <span className="text-[7px] uppercase tracking-widest text-primary/80 font-mono font-bold mt-1 text-center leading-tight">Years of<br />Innovation</span>
+                <div className="mb-2 hidden sm:flex flex-col items-center justify-center size-28 rounded-3xl border border-primary/40 bg-background/60 backdrop-blur-md exp-badge-glow">
+                  <span className="text-5xl font-bold text-primary leading-none">4+</span>
+                  <span className="text-[10px] uppercase tracking-widest text-primary/80 font-mono font-bold mt-2 text-center leading-tight">Years of<br />Experience</span>
                 </div>
               </div>
             </div>

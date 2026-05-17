@@ -5,7 +5,7 @@ const awards = [
     {
         id: 1,
         title: "Best Software Developer 2022",
-        organization: "Spera 2022 Year End at Hotel Royal Grand Paradise",
+        organization: "Hotel Royal Grand Paradise",
         date: "2022",
         description: "Recognized for exceptional software development skills and outstanding technical contributions.",
         icon: Trophy,
@@ -20,7 +20,7 @@ const awards = [
     {
         id: 2,
         title: "Exceptional Contributor 2024",
-        organization: "Spera 2024 Year End at Colombo Lotus Tower",
+        organization: "Colombo Lotus Tower",
         date: "2024",
         description: (
             <span>
