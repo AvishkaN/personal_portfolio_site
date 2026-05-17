@@ -79,7 +79,7 @@ const ContactPage = () => {
             Let's Connect, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Avishka</span>
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Specialized in Python, Robotics, and AI Automation. Ready to collaborate on your next technical challenge.
+            Specialized in AI, Robotics, and Software Systems. Ready to collaborate on your next technical challenge.
           </p>
         </div>
 

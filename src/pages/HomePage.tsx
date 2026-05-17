@@ -36,7 +36,7 @@ const HomePage = () => {
               AI Engineer & Deep learning, Robotics
             </p>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl leading-relaxed mx-auto lg:mx-0">
-              Specializing in Python-driven automation, neural architectures, and edge computing for real-world robotics and intelligent systems.
+              Specializing in automation, neural architectures, and edge computing for real-world robotics and intelligent systems.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4">
@@ -61,9 +61,10 @@ const HomePage = () => {
             {[
               { icon: "code", label: "Python" },
               { icon: "psychology", label: "PyTorch" },
-              { icon: "visibility", label: "OpenCV" },
+              { icon: "visibility", label: "Computer Vision" },
               { icon: "precision_manufacturing", label: "ROS2" },
               { icon: "hub", label: "TensorFlow" },
+              { icon: "dns", label: "Softwere Systems" },
             ].map((skill) => (
               <div key={skill.label} className="flex items-center gap-2 rounded-full bg-background/50 border border-border px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm font-medium text-muted-foreground">
                 <span className="material-symbols-outlined text-primary text-base md:text-lg">{skill.icon}</span>
@@ -80,7 +81,8 @@ const HomePage = () => {
               {/* <img
                 alt="Avishka Nirmitha, AI Engineer"
                 className="absolute inset-0 w-full h-full object-cover opacity-90 transition-all duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxLe1CFojRYjbwM_T1q1XubqwOZ5AjOoT51NEcl8DwbL373GbBc_Ue7l4Cz6KHHPX--1isXAFpeeKQIWkFBQy1Knv1toVJCFgB-5OVvzjNa677g3Sy6x9sAnUIgqqoQt3bsi9Ckv1WM5YfJvxUq_EPvApgxz0KHzeNK0NU9EuFGVRhtZPTR2AMW_NZMFO320SRpRqo2DKqaN65_xAaqzM2ZKMQWcTh2_5tK3VrABedKixpit6_WIthr1ijPKwbp_gESMTy4gsY5vg"
+              // src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxLe1CFojRYjbwM_T1q1XubqwOZ5AjOoT51NEcl8DwbL373GbBc_Ue7l4Cz6KHHPX--1isXAFpeeKQIWkFBQy1Knv1toVJCFgB-5OVvzjNa677g3Sy6x9sAnUIgqqoQt3bsi9Ckv1WM5YfJvxUq_EPvApgxz0KHzeNK0NU9EuFGVRhtZPTR2AMW_NZMFO320SRpRqo2DKqaN65_xAaqzM2ZKMQWcTh2_5tK3VrABedKixpit6_WIthr1ijPKwbp_gESMTy4gsY5vg"
+              // src="/images/Avishka Nirmitha Cover.jpeg"
               /> */}
               <div className="absolute inset-0 z-30 pointer-events-none">
                 <div className="absolute top-4 left-4 size-8 border-t-2 border-l-2 border-primary/60"></div>
