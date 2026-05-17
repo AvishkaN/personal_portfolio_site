@@ -136,9 +136,9 @@ const Timeline = () => {
           <div className="relative flex-1 overflow-hidden">
             {/* Track */}
             <div className="relative pt-12 pb-4">
-              <div className="absolute left-0 right-0 top-[60px] h-px bg-border" />
+              <div className="absolute left-0 right-0 top-[3.625rem] md:top-[3.75rem] h-px bg-border" />
               <div
-                className="absolute left-0 top-[60px] h-px bg-gradient-to-r from-primary to-blue-400 transition-all duration-500"
+                className="absolute left-0 top-[3.625rem] md:top-[3.75rem] h-px bg-gradient-to-r from-primary to-blue-400 transition-all duration-500"
                 style={{ width: `${((activeIndexInWindow + 0.5) / VISIBLE) * 100}%`, boxShadow: "0 0 8px hsl(var(--primary) / 0.6)" }}
               />
 
