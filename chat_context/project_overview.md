@@ -1,16 +1,16 @@
 # Project Overview: Personal Portfolio Website
 
-This project is a **Personal Portfolio Website** designed for **Avishka Nirmitha**, an AI Engineer specializing in Deep Learning, Robotics, Python-driven automation, and Edge Computing.
+This project is a **Personal Portfolio Website** designed for **Avishka Nirmitha**, an AI Engineer specializing in AI, Deep Learning, Software Systems, and Robotics.
 
 ## 🎯 What is this site?
 
 The site serves as a professional, highly stylized online resume and portfolio. It is designed to showcase:
 
 1. **Brand & Identity:** It has a futuristic, "cyber/tech" aesthetic (using glowing text, scanlines, and terminal-like text snippets such as `TARGET_DETECTED` and `ACTIVE_CORE_01`) that perfectly fits an AI and Robotics engineer.
-2. **Skills:** Highlights key proficiencies like Python, PyTorch, OpenCV, ROS2, and TensorFlow.
+2. **Skills:** Highlights key proficiencies like Python, PyTorch, Computer Vision, ROS2, TensorFlow, and Software Systems.
 3. **Experience Timeline:** The timeline component features an interactive, year-by-year journey detailing the transition from early programming in 2017 to a current focus on Physical AI, Robotics, and production-grade Machine Learning.
 4. **Projects & Awards:** Displays actual real-world projects (e.g., self-driving pipelines, robotic arm automation) labeled with custom statuses (like "In Production" or "On Going"). It includes a dynamic **Project Detail Page** to showcase in-depth goals, outcomes, image galleries, and embedded LinkedIn posts. Additionally, a dedicated **Awards Page** features an interactive "View Moment" image gallery modal to highlight specific recognitions and events.
-5. **Navigation & Contact:** Includes routes for Home, Projects, Awards, and Contact. The contact page provides a streamlined, secure-terminal-themed grid of direct communication links (LinkedIn, GitHub, Phone, Emails) rather than a traditional form.
+5. **Navigation & Contact:** Includes routes for Home, Awards, Projects, and Contact (managed by React Router with a global scroll-to-top handler). The contact page provides a streamlined, secure-terminal-themed grid of direct communication links (LinkedIn, GitHub, Phone, Emails) rather than a traditional form.
 
 ## 💻 Tech Stack
 
