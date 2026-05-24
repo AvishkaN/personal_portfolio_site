@@ -31,11 +31,11 @@ export const projects: Project[] = [
       "Engineered an advanced control architecture for an industrial robotic arm. The project required writing custom inverse kinematics solvers to achieve sub-millimeter precision. Integrated with a computer vision feedback loop, the arm can dynamically identify, track, and sort moving objects on a conveyor belt. The system was digitally twinned in NVIDIA Omniverse for rigorous testing prior to real-world execution.",
     image:
       // "/public/images/project_images/Avishka Nirmitha portfolio site robotic arm project.jpeg",
-      "/public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 3.jpeg",
+      "/images/project_images/Avishka Nirmitha portfolio site robotic arm project 3.jpeg",
     gallery: [
-      "/public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 2.jpeg",
-      "/public/images/project_images/Avishka Nirmitha portfolio site robotic arm project.jpeg",
-      "/public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 4.jpeg",
+      "/images/project_images/Avishka Nirmitha portfolio site robotic arm project 2.jpeg",
+      "/images/project_images/Avishka Nirmitha portfolio site robotic arm project.jpeg",
+      "/images/project_images/Avishka Nirmitha portfolio site robotic arm project 4.jpeg",
     ],
     tags: ["Robotics", "Kinematics", "C++", "Omniverse"],
     techStack: [
@@ -107,7 +107,7 @@ export const projects: Project[] = [
       "A robust real-time fire and smoke detection system utilizing computer vision for early warning and rapid response.",
     longDescription:
       "Developed a custom deep learning pipeline specialized in early fire and smoke detection. Trained on diverse environmental conditions to maintain high precision and minimize false positives. The architecture is optimized to run efficiently on edge devices, enabling immediate on-site alerts for enhanced safety and rapid incident response.",
-    image: "/public/images/project_images/Avishka Nirmitha portfolio fire detection model.jpg",
+    image: "/images/project_images/Avishka Nirmitha portfolio fire detection model.jpg",
     gallery: [],
     tags: ["Computer Vision", "Object Detection", "Deep Learning"],
     techStack: [
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     longDescription:
       "Built a robust, high-performance facial recognition and identity verification system utilizing Siamese neural networks. The pipeline performs lightning-fast face detection, alignment, feature vector extraction, and matching against a high-dimensional database. It maintains a 99.8% true-positive rate even under challenging occlusions, varied lighting, and diverse angles, making it suitable for secure access control and monitoring.",
     image:
-      "/public/images/project_images/Avishka Nirmitha portfolio face recognition1.png",
+      "/images/project_images/Avishka Nirmitha portfolio face recognition1.png",
     gallery: [
       // "/public/images/project_images/Avishka Nirmitha portfolio face recognition.png"
     ],
