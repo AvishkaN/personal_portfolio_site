@@ -1,0 +1,3 @@
+rm /var/www/av/3_avnirmitha/dist/.html
+
+run every time after build succsess
