@@ -72,8 +72,8 @@ const events = [
 const VISIBLE = 10;
 
 const Timeline = () => {
-  const [active, setActive] = useState(Math.floor(events.length / 2));
-  const [start, setStart] = useState(Math.max(0, Math.min(events.length - VISIBLE, active - Math.floor(VISIBLE / 2))));
+  const [active, setActive] = useState(0);
+  const [start, setStart] = useState(0);
 
   const visible = events.slice(start, start + VISIBLE);
   const activeIndexInWindow = active - start;
