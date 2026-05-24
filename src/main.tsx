@@ -1,5 +1,6 @@
-import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+import { ViteReactSSG } from "vite-react-ssg";
+import { routes } from "./routes";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(<App />);
+// vite-react-ssg@0.9.x looks for the named export 'createRoot' in the SSR bundle
+export const createRoot = ViteReactSSG({ routes });

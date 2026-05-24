@@ -1,0 +1,144 @@
+# Avishka Nirmitha — AI Engineer Portfolio
+# https://avnirmitha.com
+# This file provides a plain-text summary of this site for AI assistants and LLMs.
+
+## About
+
+Avishka Nirmitha is an AI Engineer with 4+ years of experience based in Sri Lanka.
+He specializes in Artificial Intelligence, Deep Learning, Computer Vision, Robotics, and Software Systems.
+
+Professional title: AI Engineer & Deep Learning, Robotics
+Website: https://avnirmitha.com
+LinkedIn: https://www.linkedin.com/in/avishka-nirmitha-9b4b11218/
+GitHub: https://github.com/AvishkaN
+
+## Core Skills
+
+- Python
+- PyTorch
+- TensorFlow
+- Computer Vision
+- ROS2 (Robot Operating System 2)
+- Deep Learning
+- Software Systems
+- C++
+- OpenCV
+- NVIDIA Omniverse
+- Large Language Models (LLMs)
+- Reinforcement Learning
+
+## Career Timeline
+
+2017 — Started Programming
+  - Began learning C# and Java during Grade 9.
+  - Built the foundation for a software engineering career.
+
+2020 — Web Development Journey
+  - Self-taught HTML, CSS, JavaScript, React.js, and Node.js through real-world projects.
+
+2021 — Full-Stack Development
+  - Developed modern web applications and strengthened software engineering skills.
+
+2022 — AI Transition & Industry Experience
+  - Shifted career focus from software engineering to Artificial Intelligence and Machine Learning.
+  - Joined the industry as a Software Engineering Intern.
+  - Received "Best Software Developer Of The Year 2022" award from Hotel Royal Grand Paradise.
+
+2023 — Deep Learning Foundations
+  - Dedicated months to studying neural networks, mathematics, and backpropagation.
+  - Explored deep learning internals beyond the black-box level.
+
+2024 — Production AI & Recognition
+  - Focused on Computer Vision, CNNs, and production-level AI systems.
+  - Received the "Exceptional Contributor 2024" award from Colombo Lotus Tower, including an international Bangkok tour.
+
+2025 — Physical AI & Robotics
+  - Building production-grade Machine Learning systems.
+  - Growing focus on robotics, robotic arms, autonomous systems, and intelligent automation.
+
+Future — Building Intelligent Systems
+  - Exploring Physical AI, deep learning, and robotics for real-world impact.
+
+## Projects
+
+### 1. Robotic Arm Automation
+URL: https://avnirmitha.com/projects/intelligent-robotic-arm
+Status: On Going
+Category: Robotics
+Year: 2023
+Role: Robotics Engineer
+Tags: Robotics, Kinematics, C++, Omniverse
+Description: A highly precise 5 DOF robotic arm control system leveraging inverse kinematics and computer vision for dynamic pick-and-place operations. Engineered an advanced control architecture for an industrial robotic arm. Custom inverse kinematics solvers achieve sub-millimeter precision. Integrated with a computer vision feedback loop for dynamic object identification, tracking, and sorting on a conveyor belt. The system was digitally twinned in NVIDIA Omniverse for rigorous testing prior to real-world execution.
+Tech Stack: C++ (kinematics solver), Python (vision scripting), NVIDIA Omniverse (digital twin simulation), ROS2 (hardware communication)
+Key Features: Custom inverse kinematics algorithms, sub-millimeter positioning accuracy, vision-guided dynamic object tracking, digital twin simulation.
+
+### 2. Self-Driving Car Software Pipeline
+URL: https://avnirmitha.com/projects/self-driving-car-pipeline
+Status: On Going
+Category: Autonomous Systems
+Year: 2024
+Role: Machine Learning Engineer
+Tags: Python, PyTorch, ROS2, Computer Vision
+Description: A full-stack autonomous driving system integrating computer vision, sensor fusion, and control algorithms for navigating complex environments safely. Developed a comprehensive pipeline for perception, planning, and control. Uses deep CNNs for lane detection, dynamic object tracking, and traffic sign recognition. Integrates sensor fusion for real-time multi-modal data processing. Validated using MetaDrive simulation.
+Tech Stack: Python (core logic), PyTorch (deep learning models), OpenCV (image processing), ROS2 (node-based communication)
+Key Features: Real-time lane and object detection, sensor fusion, reinforcement learning-based path planning, high-fidelity simulation validation.
+
+### 3. Fire Detection Model
+URL: https://avnirmitha.com/projects/fire-detection-model
+Status: Finished
+Category: Computer Vision
+Year: 2024
+Role: Machine Learning Engineer
+Tags: Computer Vision, Object Detection, Deep Learning
+Description: A robust real-time fire and smoke detection system utilizing computer vision for early warning and rapid response. Custom deep learning pipeline for early fire and smoke detection. Trained on diverse environmental conditions. Optimized for edge device deployment.
+Tech Stack: Python, PyTorch, OpenCV, YOLO (custom trained object detection)
+Key Features: Real-time early fire and smoke detection, edge device optimized, high accuracy across environments, low false-positive rate.
+
+### 4. High-Accuracy Face Recognition System
+URL: https://avnirmitha.com/projects/high-accuracy-face-recognition
+Status: Finished
+Category: Computer Vision
+Year: 2025
+Role: Machine Learning Engineer
+Tags: Computer Vision, Deep Learning, TensorFlow
+Description: A state-of-the-art facial recognition engine capable of identifying individuals in crowded environments with 99.8% accuracy under varying conditions. Uses Siamese neural networks. Performs face detection, alignment, feature vector extraction, and matching against a high-dimensional database. Maintains 99.8% true-positive rate under occlusions, varied lighting, and diverse angles.
+Tech Stack: Python, TensorFlow, OpenCV (detection and alignment), FAISS (vector similarity search)
+Key Features: 99.8% accuracy in unconstrained environments, real-time detection, resilient to lighting changes and occlusions, scalable vector database.
+
+### 5. Local LLM Fine-Tuning Pipeline
+URL: https://avnirmitha.com/projects/local-llm-fine-tuning-pipeline
+Status: Finished
+Category: Open Source LLMs
+Year: 2024
+Role: AI Engineer
+Tags: LLMs, NLP, Fine-Tuning, PyTorch
+Description: An end-to-end pipeline for fine-tuning open-source Large Language Models (Llama 3, Mistral) on custom domain-specific datasets. Uses Parameter-Efficient Fine-Tuning (PEFT) with QLoRA. Includes automated data preprocessing, model 4-bit quantization, distributed training with Hugging Face Accelerate, and custom evaluation.
+Tech Stack: Python, Hugging Face, PEFT/LoRA, PyTorch
+Key Features: QLoRA fine-tuning for low VRAM, automated dataset formatting, supports Llama 3 and Mistral, custom domain evaluation metrics.
+
+## Awards & Recognition
+
+### Best Software Developer 2022
+Organization: Hotel Royal Grand Paradise
+Year: 2022
+Description: Recognized for exceptional software development skills and outstanding technical contributions.
+
+### Exceptional Contributor 2024
+Organization: Colombo Lotus Tower
+Year: 2024
+Description: Awarded for exceptional contributions to projects and significant impact on team success. Recognition included an international tour to Bangkok.
+
+## Navigation
+
+- Home: https://avnirmitha.com/
+- Projects: https://avnirmitha.com/projects
+- Awards: https://avnirmitha.com/awards
+- Contact: https://avnirmitha.com/contact
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/avishka-nirmitha-9b4b11218/
+- GitHub: https://github.com/AvishkaN
+
+---
+Last updated: 2025
