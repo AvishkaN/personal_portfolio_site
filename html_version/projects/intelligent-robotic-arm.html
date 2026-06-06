@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotic Arm Automation | Avishka Nirmitha</title>
+  <meta name="description" content="A highly precise 5 DOF robotic arm control system leveraging inverse kinematics and computer vision for dynamic pick-and-place operations." />
+  <meta name="author" content="Avishka Nirmitha" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://avnirmitha.com/projects/intelligent-robotic-arm" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Robotic Arm Automation | Avishka Nirmitha" />
+  <meta property="og:description" content="A highly precise 5 DOF robotic arm control system leveraging inverse kinematics and computer vision for dynamic pick-and-place operations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+<div class="page-wrapper">
+
+  <!-- HEADER -->
+  <header class="header glass-nav">
+    <div class="header-inner">
+      <a href="../index.html" class="header-logo">Avishka Nirmitha</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="../index.html"    class="nav-link">Home</a>
+        <a href="../awards.html"   class="nav-link">Awards</a>
+        <a href="../projects.html" class="nav-link active">Projects</a>
+        <a href="../contact.html"  class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://lk.linkedin.com/in/avishka-nirmitha-9b4b11218" target="_blank" rel="noopener noreferrer" class="linkedin-btn-header">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <button class="hamburger-btn" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <span class="drawer-title">Menu</span>
+        <button class="drawer-close-btn" id="drawerClose" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="../index.html"    class="drawer-link">Home</a>
+        <a href="../awards.html"   class="drawer-link">Awards</a>
+        <a href="../projects.html" class="drawer-link active">Projects</a>
+        <a href="../contact.html"  class="drawer-link">Contact</a>
+        <a href="../contact.html"  class="drawer-contact-btn">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="page-main">
+    <div class="hero-gradient-bg hero-gradient" aria-hidden="true"></div>
+
+    <div class="detail-page">
+
+      <a href="../projects.html" class="back-link">
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+        Back to Projects
+      </a>
+
+      <!-- Header -->
+      <div class="detail-header">
+        <div class="detail-badges">
+          <span class="badge-category">Robotics</span>
+          <span class="badge-status status-ongoing">On Going</span>
+        </div>
+        <h1 class="detail-title">Robotic Arm Automation</h1>
+        <p class="detail-description">A highly precise 5 DOF robotic arm control system leveraging inverse kinematics and computer vision for dynamic pick-and-place operations.</p>
+        <div class="detail-meta">
+          <span class="detail-meta-item">
+            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+            2023
+          </span>
+          <span class="detail-meta-item">
+            <span class="material-symbols-outlined" aria-hidden="true">person</span>
+            Robotics Engineer
+          </span>
+        </div>
+      </div>
+
+      <!-- Gallery — 4 images -->
+      <div class="gallery-section">
+        <div class="gallery-main">
+          <img id="galleryMainImg"
+               src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 3.jpeg"
+               alt="Robotic Arm Automation — main view" />
+        </div>
+        <div class="gallery-thumbs">
+          <button class="gallery-thumb active" data-src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 3.jpeg" aria-label="View image 1">
+            <img src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 3.jpeg" alt="Thumbnail 1" />
+          </button>
+          <button class="gallery-thumb" data-src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 2.jpeg" aria-label="View image 2">
+            <img src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 2.jpeg" alt="Thumbnail 2" />
+          </button>
+          <button class="gallery-thumb" data-src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project.jpeg" aria-label="View image 3">
+            <img src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project.jpeg" alt="Thumbnail 3" />
+          </button>
+          <button class="gallery-thumb" data-src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 4.jpeg" aria-label="View image 4">
+            <img src="../../public/images/project_images/Avishka Nirmitha portfolio site robotic arm project 4.jpeg" alt="Thumbnail 4" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Content: Overview + Tech Sidebar -->
+      <div class="detail-content-grid">
+        <div class="detail-overview">
+          <h2 class="detail-overview-title">Overview</h2>
+          <p class="detail-long-desc">Engineered an advanced control architecture for an industrial robotic arm. The project required writing custom inverse kinematics solvers to achieve sub-millimeter precision. Integrated with a computer vision feedback loop, the arm can dynamically identify, track, and sort moving objects on a conveyor belt. The system was digitally twinned in NVIDIA Omniverse for rigorous testing prior to real-world execution.</p>
+
+          <h3 class="detail-features-title">Key Features</h3>
+          <ul class="features-list">
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              Custom inverse kinematics algorithms
+            </li>
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              Sub-millimeter positioning accuracy
+            </li>
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              Vision-guided dynamic object tracking
+            </li>
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              Digital twin simulation for safe testing
+            </li>
+          </ul>
+        </div>
+
+        <aside>
+          <div class="tech-sidebar-card">
+            <div class="tech-sidebar-header">
+              <span class="material-symbols-outlined" aria-hidden="true">code</span>
+              <span class="tech-sidebar-heading">Tech Stack</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <div class="tech-name">C++</div>
+                <div class="tech-purpose">High-performance kinematics solver</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">Python</div>
+                <div class="tech-purpose">Vision integration scripting</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">NVIDIA Omniverse</div>
+                <div class="tech-purpose">Digital twin simulation</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">ROS2</div>
+                <div class="tech-purpose">Hardware communication</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="footer-name font-signature">Avishka Nirmitha</span>
+          <span class="footer-role">AI &amp; Robotics Engineer</span>
+        </div>
+        <p class="footer-copy">&copy; 2026 Avishka Nirmitha Portfolio</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-tagline">Building the future through code and metal.<br />Sri Lanka | Remote</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

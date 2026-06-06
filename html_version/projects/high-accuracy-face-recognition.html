@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High-Accuracy Face Recognition | Avishka Nirmitha</title>
+  <meta name="description" content="A state-of-the-art facial recognition engine capable of identifying individuals in crowded environments with 99.8% accuracy under varying conditions." />
+  <meta name="author" content="Avishka Nirmitha" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://avnirmitha.com/projects/high-accuracy-face-recognition" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="High-Accuracy Face Recognition | Avishka Nirmitha" />
+  <meta property="og:description" content="A state-of-the-art facial recognition engine capable of identifying individuals in crowded environments with 99.8% accuracy under varying conditions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+<div class="page-wrapper">
+
+  <!-- HEADER -->
+  <header class="header glass-nav">
+    <div class="header-inner">
+      <a href="../index.html" class="header-logo">Avishka Nirmitha</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="../index.html"    class="nav-link">Home</a>
+        <a href="../awards.html"   class="nav-link">Awards</a>
+        <a href="../projects.html" class="nav-link active">Projects</a>
+        <a href="../contact.html"  class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://lk.linkedin.com/in/avishka-nirmitha-9b4b11218" target="_blank" rel="noopener noreferrer" class="linkedin-btn-header">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <button class="hamburger-btn" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <span class="drawer-title">Menu</span>
+        <button class="drawer-close-btn" id="drawerClose" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="../index.html"    class="drawer-link">Home</a>
+        <a href="../awards.html"   class="drawer-link">Awards</a>
+        <a href="../projects.html" class="drawer-link active">Projects</a>
+        <a href="../contact.html"  class="drawer-link">Contact</a>
+        <a href="../contact.html"  class="drawer-contact-btn">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="page-main">
+    <div class="hero-gradient-bg hero-gradient" aria-hidden="true"></div>
+
+    <div class="detail-page">
+
+      <a href="../projects.html" class="back-link">
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+        Back to Projects
+      </a>
+
+      <!-- Header -->
+      <div class="detail-header">
+        <div class="detail-badges">
+          <span class="badge-category">Computer Vision</span>
+          <span class="badge-status status-finished">Finished</span>
+        </div>
+        <h1 class="detail-title">High-Accuracy Face Recognition System</h1>
+        <p class="detail-description">A state-of-the-art facial recognition engine capable of identifying individuals in crowded environments with 99.8% accuracy under varying conditions.</p>
+        <div class="detail-meta">
+          <span class="detail-meta-item">
+            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+            2025
+          </span>
+          <span class="detail-meta-item">
+            <span class="material-symbols-outlined" aria-hidden="true">person</span>
+            Machine Learning Engineer
+          </span>
+        </div>
+      </div>
+
+      <!-- Gallery — single image -->
+      <div class="gallery-section">
+        <div class="gallery-main">
+          <img id="galleryMainImg"
+               src="../../public/images/project_images/Avishka Nirmitha portfolio face recognition.png"
+               alt="High-Accuracy Face Recognition System" />
+        </div>
+      </div>
+
+      <!-- Content: Overview + Tech Sidebar -->
+      <div class="detail-content-grid">
+        <div class="detail-overview">
+          <h2 class="detail-overview-title">Overview</h2>
+          <p class="detail-long-desc">Built a robust, high-performance facial recognition and identity verification system utilizing Siamese neural networks. The pipeline performs lightning-fast face detection, alignment, feature vector extraction, and matching against a high-dimensional database. It maintains a 99.8% true-positive rate even under challenging occlusions, varied lighting, and diverse angles, making it suitable for secure access control and monitoring.</p>
+
+          <h3 class="detail-features-title">Key Features</h3>
+          <ul class="features-list">
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              99.8% accuracy in unconstrained environments
+            </li>
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              Real-time face detection and alignment
+            </li>
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              Resilient to lighting changes and partial occlusions
+            </li>
+            <li class="feature-item">
+              <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+              Highly scalable vector database integration
+            </li>
+          </ul>
+        </div>
+
+        <aside>
+          <div class="tech-sidebar-card">
+            <div class="tech-sidebar-header">
+              <span class="material-symbols-outlined" aria-hidden="true">code</span>
+              <span class="tech-sidebar-heading">Tech Stack</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <div class="tech-name">Python</div>
+                <div class="tech-purpose">Application backend</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">TensorFlow</div>
+                <div class="tech-purpose">Model training and inference</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">OpenCV</div>
+                <div class="tech-purpose">Face detection and alignment</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">FAISS</div>
+                <div class="tech-purpose">High-speed vector similarity search</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="footer-name font-signature">Avishka Nirmitha</span>
+          <span class="footer-role">AI &amp; Robotics Engineer</span>
+        </div>
+        <p class="footer-copy">&copy; 2026 Avishka Nirmitha Portfolio</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-tagline">Building the future through code and metal.<br />Sri Lanka | Remote</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
