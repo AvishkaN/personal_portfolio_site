@@ -206,8 +206,8 @@ Responsive rules added inside the existing `md` and `lg` breakpoint blocks.
 
 **Images available:**
 ```
-../public/images/awards/Avishka Nirmitha Best Software Developer 2022 Spera.jpeg
-../public/images/awards/Avishka Nirmitha Exceptional Contributor of the year 2024 Spera .jpeg
+public/images/awards/Avishka Nirmitha Best Software Developer 2022 Spera.jpeg
+public/images/awards/Avishka Nirmitha Exceptional Contributor of the year 2024 Spera .jpeg
 ```
 
 ---
