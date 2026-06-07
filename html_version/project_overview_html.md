@@ -21,9 +21,9 @@ accent, glass-morphism cards.
 | 1 | Home | `src/pages/HomePage.tsx` + `Timeline.tsx` | `index.html` | ✅ Done |
 | 2 | Projects list | `src/pages/ProjectsPage.tsx` | `projects.html` | ✅ Done |
 | 3 | Project detail | `src/pages/ProjectDetailPage.tsx` | `projects/[slug].html` (×5) | ✅ Done |
-| 4 | Awards | `src/pages/AwardsPage.tsx` | `awards.html` | ⬜ Next |
-| 5 | Contact | `src/pages/ContactPage.tsx` | `contact.html` | ⬜ Pending |
-| 6 | 404 | `src/pages/NotFound.tsx` | `404.html` | ⬜ Pending |
+| 4 | Awards | `src/pages/AwardsPage.tsx` | `awards.html` | ✅ Done |
+| 5 | Contact | `src/pages/ContactPage.tsx` | `contact.html` | ✅ Done |
+| 6 | 404 | `src/pages/NotFound.tsx` | `404.html` | ⬜ Next |
 
 ---
 
@@ -33,10 +33,12 @@ accent, glass-morphism cards.
 html_version/
 ├── index.html                  ✅ Home page (hero + timeline + header + footer)
 ├── projects.html               ✅ Projects listing (filter tabs + 5 project cards)
+├── awards.html                 ✅ Awards grid + row toggle + modal lightbox
+├── contact.html                ✅ Terminal animation + 2 contact cards
 ├── css/
-│   └── styles.css              ✅ All styles (shared + projects + detail page styles)
+│   └── styles.css              ✅ All styles (shared + all page styles)
 ├── js/
-│   └── main.js                 ✅ Mobile menu, active nav, timeline, projects filter, gallery switcher
+│   └── main.js                 ✅ Mobile menu, active nav, timeline, gallery, filter, modal, layout toggle
 ├── projects/
 │   ├── intelligent-robotic-arm.html         ✅ 4-image gallery + overview + tech stack
 │   ├── self-driving-car-pipeline.html       ✅ Single image + 4 LinkedIn posts + overview + tech stack
@@ -46,24 +48,10 @@ html_version/
 └── project_overview_html.md    ✅ This file
 ```
 
-**Future structure (after all pages):**
+**Remaining (404 only):**
 ```
 html_version/
-├── index.html
-├── projects.html
-├── awards.html
-├── contact.html
-├── 404.html
-├── projects/
-│   ├── intelligent-robotic-arm.html
-│   ├── self-driving-car-pipeline.html
-│   ├── fire-detection-model.html
-│   ├── high-accuracy-face-recognition.html
-│   └── local-llm-fine-tuning-pipeline.html
-├── css/
-│   └── styles.css              (grows as new page styles are added)
-└── js/
-    └── main.js                 (grows as new page interactions are added)
+└── 404.html                    ⬜ Simple not-found page with "Go Home" link
 ```
 
 ---
@@ -236,9 +224,23 @@ Responsive rules added inside the existing `md` and `lg` breakpoint blocks.
   - (Email if present in source.)
 - Each link styled as a glass card with hover glow.
 
-**CSS to add:** `.contact-grid`, `.contact-card`, `.contact-icon`, `.contact-label`.
+**CSS added to `styles.css`:** `.contact-page`, `.contact-inner`, `.contact-terminal`,
+`.terminal-bar`, `.terminal-dots`, `.terminal-dot` (`.red`, `.amber`, `.green`),
+`.terminal-label`, `.terminal-body`, `.terminal-line`, `.typing-line-1/2/3`,
+`@keyframes term-appear`, `.contact-status-badge`, `.badge-ping-wrap`, `.badge-ping`,
+`.badge-dot`, `.contact-heading`, `.contact-subtext`, `.contact-cards`, `.contact-card`,
+`.contact-card-inner`, `.contact-card-icon`, `.contact-card-label`, `.contact-card-value`.
+Responsive rules added in separate `md` and `lg` blocks.
 
-**JS:** None needed.
+**JS:** None needed — page is purely static.
+
+**What was built:**
+- CSS-only staggered terminal animation: 3 lines appear sequentially via `term-appear` keyframe
+  with delays of `0.4s`, `1.2s`, `2s`. Lines 1–2 in `--blue-400`, line 3 in emerald green.
+- Status ping badge (pure CSS `ping` animation, already defined in shared keyframes).
+- Heading: "Let's Connect, **Avishka**" with `gradient-text` span.
+- Two `glass-card` contact cards (LinkedIn + GitHub) — centered flex-wrap layout, 100% wide on
+  mobile, `calc(50% - 0.75rem)` at `md`.
 
 ---
 

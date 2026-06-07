@@ -232,3 +232,67 @@ renderTimeline();
     });
   });
 })();
+
+// ---- AWARDS MODAL ----
+(function () {
+  var modal         = document.getElementById('awardModal');
+  var modalPanel    = document.getElementById('awardModalPanel');
+  var modalImg      = document.getElementById('modalImg');
+  var modalTitle    = document.getElementById('modalTitle');
+  var modalSubtitle = document.getElementById('modalSubtitle');
+  var closeBtn      = document.getElementById('modalClose');
+
+  if (!modal) return;
+
+  var openModal = function (btn) {
+    modalImg.src              = btn.dataset.src;
+    modalImg.alt              = btn.dataset.title + ' photo';
+    modalTitle.textContent    = btn.dataset.title;
+    modalSubtitle.textContent = btn.dataset.org + ' • ' + btn.dataset.year;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  var closeModal = function () {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  document.querySelectorAll('.btn-view-moment').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn); });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', function (e) {
+    if (!modalPanel.contains(e.target)) closeModal();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+})();
+
+// ---- AWARDS LAYOUT TOGGLE ----
+(function () {
+  var btnGrid = document.getElementById('btnGrid');
+  var btnRow  = document.getElementById('btnRow');
+  var gridEl  = document.getElementById('awardsGrid');
+  var rowEl   = document.getElementById('awardsRow');
+
+  if (!btnGrid || !btnRow) return;
+
+  btnGrid.addEventListener('click', function () {
+    gridEl.style.display = '';
+    rowEl.style.display  = 'none';
+    btnGrid.classList.add('active');
+    btnRow.classList.remove('active');
+  });
+
+  btnRow.addEventListener('click', function () {
+    gridEl.style.display = 'none';
+    rowEl.style.display  = '';
+    btnRow.classList.add('active');
+    btnGrid.classList.remove('active');
+  });
+})();
